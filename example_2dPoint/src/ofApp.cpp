@@ -26,6 +26,9 @@ void ofApp::draw(){
 	ofNoFill();
 	ofCircle(point, 100);
 	ofDrawBitmapString("Measurement", 50, 65);
+	
+	ofSetColor(255);
+	ofDrawBitmapString("Velocity : " + ofToString(ukf.getVelocity()), 50, ofGetHeight()-100);
 }
 
 //--------------------------------------------------------------
